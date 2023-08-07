@@ -26,8 +26,8 @@ func main() {
 	service := service.NewService(storage)
 	// initialize apiServer
 	apiServer := api.New(&api.RouterOptions{
-		Log: logger,
-		// Cfg:     &cfg,
+		Log:     logger,
+		Cfg:     cfg,
 		Service: service,
 	})
 

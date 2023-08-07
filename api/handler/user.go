@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/Shakhrik/video_task/api/models"
+	"github.com/Shakhrik/video_task/config"
 	"github.com/Shakhrik/video_task/dto"
 	"github.com/Shakhrik/video_task/pkg/logger"
 	"github.com/Shakhrik/video_task/service"
@@ -12,7 +13,7 @@ import (
 
 type UserHandler struct {
 	log logger.Logger
-	// cfg         config.Config
+	cfg config.Config
 	svc service.Service
 }
 

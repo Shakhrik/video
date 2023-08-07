@@ -1,6 +1,7 @@
 package api
 
 import (
+	"github.com/Shakhrik/video_task/config"
 	"github.com/Shakhrik/video_task/pkg/logger"
 	"github.com/Shakhrik/video_task/service"
 
@@ -14,8 +15,8 @@ import (
 )
 
 type RouterOptions struct {
-	Log logger.Logger
-	// Cfg     *config.Config
+	Log     logger.Logger
+	Cfg     config.Config
 	Service service.Service
 }
 

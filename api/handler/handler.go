@@ -10,5 +10,7 @@ type Handler struct {
 }
 
 func NewHandler(svc service.Service, log logger.Logger) *Handler {
-	return &Handler{UserHandler: *NewUserHandler(svc, log)}
+	return &Handler{
+		UserHandler: *NewUserHandler(svc, log),
+	}
 }
